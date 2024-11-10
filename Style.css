@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Section */
+#home {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 50px;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;      /* Allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px;  
+}
+
+.project {
+    flex: 1 1 300px;      /* Flexible width, minimum 300px per item */
+    max-width: 300px;     /* Limit max width of each project */
+    text-align: center;
+}
+.project img {
+    width: 100%;          /* Make images fit the project container */
+    height: auto;         /* Maintain the aspect ratio */
+    border-radius: 8px;
+}
+/* Contact Section */
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+form input, form textarea, form button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #home, #about, #skills, #portfolio, #contact {
+        padding: 20px;
+    }
+}
+/* Download Resume Button */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;        /* Adjust size of the image */
+    height: 200px;
+    border-radius: 50%;  /* Circular image */
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Maintain aspect ratio while covering container */
+    filter: brightness(0.9); /* Slightly darken image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adding shadow */
+    transition: transform 0.3s ease-in-out;
+}
+.image-container img:hover {
+    transform: scale(1.05);
+}
+/* Style for h1 headings */
+h1 {
+    font-size: 3em;          /* Adjust the font size */
+    font-weight: bold;       /* Make the heading bold */
+    color: #333;             /* Dark text color for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to text */
+    margin-bottom: 20px;     /* Space below the heading */
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+h1:hover {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+    transform: translateY(-5px); /* Slightly lift the heading on hover */
+}
